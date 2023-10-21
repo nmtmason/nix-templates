@@ -1,7 +1,9 @@
 {
   description = "Ready-made templates for easily creating flake-driven environments";
 
-  inputs = {nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";};
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  };
 
   outputs = {
     self,
