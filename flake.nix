@@ -1,10 +1,12 @@
 {
-  description =
-    "Ready-made templates for easily creating flake-driven environments";
+  description = "Ready-made templates for easily creating flake-driven environments";
 
-  inputs = { nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-unstable"; };
+  inputs = {nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";};
 
-  outputs = { self, nixpkgs }: {
+  outputs = {
+    self,
+    nixpkgs,
+  }: {
     templates = {
       darwin = {
         dotnet = {
@@ -27,7 +29,6 @@
           description = "Node.js development environment";
         };
       };
-
     };
   };
 }
