@@ -11,6 +11,11 @@
   }: {
     templates = {
       darwin = {
+        deno = {
+          path = ./templates/darwin/deno;
+          description = "Deno development environment";
+        };
+
         dotnet = {
           path = ./templates/darwin/dotnet;
           description = ".NET 6 / 7 / 8 development environment";
