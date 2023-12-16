@@ -13,6 +13,7 @@ Where `ENV` is one of the following:
 - `darwin.dotnet`
 - `darwin.dotnet5`
 - `darwin.dotnet3`
+- `darwin.nix`
 - `darwin.node`
 - `nixos.dotnet`
 - `nixos.dotnet5`

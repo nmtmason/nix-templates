@@ -31,6 +31,11 @@
           description = ".NET 5 development environment";
         };
 
+        dotnet5 = {
+          path = ./templates/darwin/nix;
+          description = "Nix development environment";
+        };
+
         node = {
           path = ./templates/darwin/node;
           description = "Node.js development environment";
