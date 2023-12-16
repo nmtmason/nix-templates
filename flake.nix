@@ -41,27 +41,6 @@
           description = "Node.js development environment";
         };
       };
-      nixos = {
-        dotnet = {
-          path = ./templates/nixos/dotnet;
-          description = ".NET 6 / 7 / 8 development environment";
-        };
-
-        dotnet3 = {
-          path = ./templates/nixos/dotnet3;
-          description = ".NET 3 development environment";
-        };
-
-        dotnet5 = {
-          path = ./templates/nixos/dotnet5;
-          description = ".NET 5 development environment";
-        };
-
-        node = {
-          path = ./templates/nixos/node;
-          description = "Node.js development environment";
-        };
-      };
     };
   };
 }

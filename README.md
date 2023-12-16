@@ -16,20 +16,12 @@ Where `ENV` is one of the following:
 - `darwin.dotnet3`
 - `darwin.nix`
 - `darwin.node`
-- `nixos.dotnet`
-- `nixos.dotnet5`
-- `nixos.dotnet3`
-- `nixos.node`
 
 Or create a new project:
 
 ```bash
 nix flake new --template github:nmtmason/nix-templates#{ENV} ${NEW_PROJECT_DIRECTORY}
 ```
-
-## Improvements
-
-- [ ] Combine `darwin` and `nixos` directories.
 
 ## Notes
 
