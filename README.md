@@ -29,5 +29,4 @@ nix flake new --template github:nmtmason/nix-templates#{ENV} ${NEW_PROJECT_DIREC
 
 ## Improvements
 
-- [ ] Standardise input names.
 - [ ] Combine `darwin` and `nixos` directories.

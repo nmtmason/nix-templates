@@ -1,11 +1,11 @@
 {
   description = "Default template for a .NET and JavaScript development environment.";
 
-  inputs = {nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";};
+  inputs = {nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";};
 
   outputs = {
     self,
-    nixpkgs-unstable,
+    nixpkgs,
   }: let
     overlays = [
       (final: prev: rec {
@@ -17,10 +17,10 @@
 
     system = "aarch64-darwin";
 
-    unstable = import nixpkgs-unstable {inherit overlays system;};
+    pkgs = import nixpkgs {inherit overlays system;};
   in {
-    devShells.${system}.default = unstable.mkShell {
-      packages = with unstable; [
+    devShells.${system}.default = pkgs.mkShell {
+      packages = with pkgs; [
         (with pkgs.dotnetCorePackages;
             combinePackages [sdk_6_0 sdk_7_0 sdk_8_0])
         mono

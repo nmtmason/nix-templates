@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "nixpkgs-unstable": {
+    "nixpkgs": {
       "locked": {
         "lastModified": 1702312524,
         "narHash": "sha256-gkZJRDBUCpTPBvQk25G0B7vfbpEYM5s5OZqghkjZsnE=",
@@ -18,7 +18,7 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
