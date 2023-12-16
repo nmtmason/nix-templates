@@ -30,3 +30,11 @@ nix flake new --template github:nmtmason/nix-templates#{ENV} ${NEW_PROJECT_DIREC
 ## Improvements
 
 - [ ] Combine `darwin` and `nixos` directories.
+
+## Notes
+
+How to set a specific version of yarn?
+
+```
+yarn set version 3.x
+```
