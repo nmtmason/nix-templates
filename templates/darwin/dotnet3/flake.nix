@@ -25,7 +25,13 @@
     pkgs = import nixpkgs {inherit overlays system;};
     pkgs-2211 = import nixpkgs-2211 {system = fallbackSystem;};
 
-    packages = with pkgs; [nodejs-18_x pnpm yarn];
+    packages = with pkgs; [
+      azure-cli
+      azure-functions-core-tools
+      nodejs-18_x
+      pnpm
+      yarn
+    ];
     packages-2211 = with pkgs-2211; [dotnet-sdk_3];
   in {
     devShells.${system}.default =

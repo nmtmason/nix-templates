@@ -21,6 +21,8 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
+        azure-cli
+        azure-functions-core-tools
         (with pkgs.dotnetCorePackages;
             combinePackages [sdk_6_0 sdk_7_0 sdk_8_0])
         mono
