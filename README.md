@@ -10,6 +10,7 @@ nix flake init --template github:nmtmason/nix-templates#{ENV}
 
 Where `ENV` is one of the following:
 
+- `darwin.deno`
 - `darwin.dotnet`
 - `darwin.dotnet5`
 - `darwin.dotnet3`
