@@ -26,7 +26,6 @@
     pkgs-2211 = import nixpkgs-2211 {system = fallbackSystem;};
 
     packages = with pkgs; [
-      azure-cli
       azure-functions-core-tools
       nodejs-18_x
       pnpm
